@@ -25,3 +25,6 @@ venv.bak/
 
 # Windows
 Thumbs.db
+
+# pipenv
+Pipfile.lock
