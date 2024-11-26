@@ -46,12 +46,13 @@ reset_db.bat
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/bene-volent/django-auth-backend.git
+    cd django-auth-backend
     ```
 
 2. Create and activate a virtual environment using Pipenv:
     ```bash
+    python -m pip install pipenv
     pipenv install
     pipenv shell
     ```
