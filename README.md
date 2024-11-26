@@ -56,8 +56,11 @@ reset_db.bat
     pipenv install
     pipenv shell
     ```
-
-3. Create a `.env` file in the root directory and add the following environment variables:
+3. Generate secret keys for project (SECRET_KEY, JWT_SECRET):
+  ```bash
+    python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+  ```
+4. Create a `.env` file in the root directory and add the following environment variables:
     ```
     SECRET_KEY='your-secret-key'
     DEBUG=True
@@ -68,18 +71,18 @@ reset_db.bat
     STORE_TOKEN_IN_HTTP_ONLY_COOKIE=False
     ```
 
-4. Apply the migrations:
+5. Apply the migrations:
     ```bash
     python manage.py makemigrations
     python manage.py migrate
     ```
 
-5. Create a superuser:
+6. Create a superuser:
     ```bash
     python manage.py createsuperuser
     ```
 
-6. Run the development server:
+7. Run the development server:
     ```bash
     python manage.py runserver
     ```
