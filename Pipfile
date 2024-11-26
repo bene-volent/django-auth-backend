@@ -4,6 +4,25 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+asgiref = "*"
+bcrypt = "*"
+django = "*"
+django-cors-headers = "*"
+django-filter = "*"
+djangorestframework = "*"
+drf-yasg = "*"
+inflection = "*"
+markdown = "*"
+packaging = "*"
+pillow = "*"
+python-dotenv = "*"
+pytz = "*"
+pyyaml = "*"
+sqlparse = "*"
+tzdata = "*"
+uritemplate = "*"
+python-decouple = "*"
+pyjwt = "*"
 
 [dev-packages]
 
