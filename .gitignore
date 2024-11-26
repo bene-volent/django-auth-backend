@@ -5,9 +5,9 @@
 __pycache__/
 db.sqlite3
 media
-
+*/migrations/
 # Environments
-.env
+# .env 
 venv/
 env/
 ENV/
